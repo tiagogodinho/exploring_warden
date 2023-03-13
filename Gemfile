@@ -2,4 +2,5 @@
 
 source 'https://rubygems.org'
 
-gem 'rackup', '~> 2.1'
+gem 'hanami-router', '~> 2.0'
+gem 'webrick', '~> 1.8'

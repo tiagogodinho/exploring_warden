@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+Bundler.require
 
-run do |_env|
-  [200, {}, ['Hello World']]
+app = Hanami::Router.new do
+  get '/', to: ->(_env) { [200, {}, ['Hello World']] }
 end
+
+run app
