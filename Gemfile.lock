@@ -12,7 +12,11 @@ GEM
       hansi (~> 0.2.0)
       mustermann (= 3.0.0)
     rack (2.2.6.3)
+    rack-session (1.0.1)
+      rack (< 3)
     ruby2_keywords (0.0.5)
+    warden (1.2.9)
+      rack (>= 2.0.9)
     webrick (1.8.1)
 
 PLATFORMS
@@ -20,6 +24,8 @@ PLATFORMS
 
 DEPENDENCIES
   hanami-router (~> 2.0)
+  rack-session (~> 1.0)
+  warden (~> 1.2)
   webrick (~> 1.8)
 
 BUNDLED WITH
